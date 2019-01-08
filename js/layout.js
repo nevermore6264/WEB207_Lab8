@@ -1,55 +1,55 @@
-var app = angular.module("myapp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/home", {
-            templateUrl: "WEB2017_Lab8/home.html"
+            templateUrl: "home.html"
         })
         .when("/about", {
-            templateUrl: "WEB2017_Lab8/about.html"
+            templateUrl: "about.html"
         })
         .when("/contact", {
-            templateUrl: "WEB2017_Lab8/contact.html"
+            templateUrl: "contact.html"
         })
         .when("/feedback", {
-            templateUrl: "WEB2017_Lab8/feedback.html"
+            templateUrl: "feedback.html"
         })
         .when("/faq", {
-            templateUrl: "WEB2017_Lab8/faq.html"
+            templateUrl: "faq.html"
         })
         .when("/account/login", {
-            templateUrl: "WEB2017_Lab8/account/login.html"
+            templateUrl: "account/login.html"
         })
         .when("/account/register", {
-            templateUrl: "WEB2017_Lab8/account/register.html"
+            templateUrl: "account/register.html"
         })
         .when("/account/forgot", {
-            templateUrl: "WEB2017_Lab8/account/forgot.html"
+            templateUrl: "account/forgot.html"
         })
         .when("/account/logoff", {
             redirectTo: "/home"
         })
         .when("/account/change", {
-            templateUrl: "WEB2017_Lab8/account/change.html"
+            templateUrl: "account/change.html"
         })
         .when("/account/profile", {
-            templateUrl: "WEB2017_Lab8/account/profile.html"
+            templateUrl: "account/profile.html"
         })
         .when("/account/orders", {
-            templateUrl: "WEB2017_Lab8/account/orders.html"
+            templateUrl: "account/orders.html"
         })
         .when("/account/products", {
-            templateUrl: "WEB2017_Lab8/account/products.html"
+            templateUrl: "account/products.html"
         })
         .when("/category/:id", {
-            templateUrl: "WEB2017_Lab8/ProductList.html",
+            templateUrl: "ProductList.html",
             controller: "categoryCtrl"
         })
         .when("/supplier/:id", {
-            templateUrl: "WEB2017_Lab8/ProductList.html",
+            templateUrl: "ProductList.html",
             controller: "supplierCtrl"
         })
         .when("/special/:id", {
-            templateUrl: "WEB2017_Lab8/ProductList.html",
+            templateUrl: "ProductList.html",
             controller: "specialCtrl"
         })
         .otherwise({
